@@ -1,8 +1,63 @@
+/* Body */
 body{
     position: relative;
 }
 
-/*
+/* TEXT */
+h4{
+    text-align: center;
+}
+
+/* CONTENT CONTAINERS */
+/* Content */
+#content{
+    background-color: #212529;
+}
+
+/*All Containers*/
+#resume,#projects,#courses,#contact,#others{
+    height: 100vh;
+}
+
+/* Resume Container */
+#resume{
+    background-color: white;
+}
+    /* Columns*/
+#resumeCol1of2{
+    background-color: white;
+}
+
+/* Projects Container */
+#projects{
+    background-color: #D63B18;
+}
+
+/* Courses Container */
+#courses{
+    background-color: #8CD34D;
+}
+
+/* Contact Container */
+#contact{
+    background-color: #61B1D9;
+}
+
+/* Others Container */
+#others{
+    background-color: #523F86;
+}
+
+/* Buttons */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+
+
+/* COMMENTED
 #scrollspyHeading1{
     padding-top: 55px;
 }
