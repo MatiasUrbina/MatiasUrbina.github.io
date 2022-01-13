@@ -17,145 +17,296 @@
 </head>
 
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="40">
+<body class="px-4 pb-4" data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="40">
     <!-- MAIN CONTAINER -->
     <!-- Back to top button -->
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
-    <div class="container-fluid px-0">
-        <!-- TOP HEADER -->
-        <div class="top-header py-4">
-            <div class="container">
-                <h1 style="text-align: center;">Portfolio</h1>
-            </div>
-        </div> <!-- END TOP HEADER -->
 
-        <!-- Navbar -->
-        <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-            <!-- NAVBAR CONTAINER -->
-            <div class="container-fluid">
-                <!-- Navabar Logo -->
-                <a class="navbar-brand" href="#">Matías Urbina</a>
-                <!-- Navbar Responsive Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- NAVBAR ELEMENTS CONTAINER -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Navbar elements -->
-                    <ul class="nav-pills navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#courses">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#others">Others</a>
-                        </li>
-                    </ul><!-- End Nav Elements -->
-                </div> <!-- END NAVBAR ELEMENTS CONTAINER -->
-            </div> <!-- END NAVBAR CONTAINER -->
-        </nav> <!-- End Navbar -->
+    <!-- TOP HEADER -->
+    <div class="top-header py-4 mx-0" id="header">
+        <div class="container-fluid">
+            <h1 style="text-align: center;">Portfolio</h1>
+        </div>
+    </div> <!-- END TOP HEADER -->
 
-        <!-- CONTENT CONTAINER -->
-        <div class="container-fluid px-4 pb-4" id="content">
-            <!-- RESUME CONTAINER -->
-            <div id="resume" class="container-fluid">
-                <!-- RESUME ROW 1 of 1 -->
-                <div class="row" id="resumeRow">
-                    <!-- RESUME COL 1 of 2 -->
-                    <div class="col-md-6 col-sm-12 pt-3 headerCol" id="resumeCol1of2">
-                        <h4 id="scrollspyHeading1">Resume</h4>
-                    </div> <!-- END OF RESUME COL 1 of 2 -->
-                    <!-- RESUME COL 2 of 2 -->
-                    <div class="col-md-6 col-sm-12 pt-3 contCol" id="resumeCol2of2">
-                        <h1>PROFESIONAL OVERVIEW</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod egestas sem at
-                            tempus.
-                            Nulla
-                            euismod
-                            vulputate velit, id tincidunt lorem volutpat a. Morbi accumsan venenatis varius. Cras eget
-                            ex vitae
-                            sapien
-                            egestas viverra. Vivamus felis risus, varius mattis interdum eget, blandit a erat. Nam
-                            vulputate
-                            congue
-                            mauris in rutrum. Vestibulum eu mi quis ligula ultricies lacinia. Donec vehicula ex libero.
-                            Curabitur
-                            venenatis quam in nunc feugiat lacinia. Maecenas vestibulum risus vitae nisi tempor, nec
-                            posuere
-                            lorem
-                            molestie. Integer vestibulum odio nec scelerisque viverra. Maecenas ornare interdum dolor,
-                            sit amet
-                            facilisis dui cursus in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                            posuere
-                            cubilia
-                            curae;
-                        </p>
-                    </div> <!-- END OF RESUME COL 2 of 2 -->
-                </div> <!-- END OF RESUME ROW 1 of 1 -->
-            </div> <!-- END RESUME CONTAINER -->
+    <!-- Navbar -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+        <!-- NAVBAR CONTAINER -->
+        <div class="container-fluid">
+            <!-- Navabar Logo -->
+            <a class="navbar-brand" href="#">Matías Urbina</a>
+            <!-- Navbar Responsive Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAVBAR ELEMENTS CONTAINER -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar elements -->
+                <ul class="nav-pills navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#others">Others</a>
+                    </li>
+                </ul><!-- End Nav Elements -->
+            </div> <!-- END NAVBAR ELEMENTS CONTAINER -->
+        </div> <!-- END NAVBAR CONTAINER -->
+    </nav> <!-- End Navbar -->
 
-            <div id="projects" class="container-fluid">
-                <!-- PROJECTS ROW 1 of 1 -->
-                <div class="row" id="projectsRow">
-                    <!-- PROJECTS COL 1 of 2 -->
-                    <div class="col-md-6 col-sm-12 pt-3 headerCol" id="projectsCol1of2">
-                        <h4 id="scrollspyHeading1">Projects</h4>
-                    </div> <!-- END OF PROJECTS COL 1 of 2 -->
-                    <!-- PROJECTS COL 2 of 2 -->
-                    <div class="col-md-6 col-sm-12 pt-3 contCol" id="projectsCol2of2">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod egestas sem at
-                            tempus.
-                            Nulla
-                            euismod
-                            vulputate velit, id tincidunt lorem volutpat a. Morbi accumsan venenatis varius. Cras eget
-                            ex vitae
-                            sapien
-                            egestas viverra. Vivamus felis risus, varius mattis interdum eget, blandit a erat. Nam
-                            vulputate
-                            congue
-                            mauris in rutrum. Vestibulum eu mi quis ligula ultricies lacinia. Donec vehicula ex libero.
-                            Curabitur
-                            venenatis quam in nunc feugiat lacinia. Maecenas vestibulum risus vitae nisi tempor, nec
-                            posuere
-                            lorem
-                            molestie. Integer vestibulum odio nec scelerisque viverra. Maecenas ornare interdum dolor,
-                            sit amet
-                            facilisis dui cursus in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                            posuere
-                            cubilia
-                            curae;
-                        </p>
-                    </div> <!-- END OF PROJECTS COL 2 of 2 -->
-                </div> <!-- END OF PROJECTS ROW 1 of 1 -->
-            </div> <!-- END PROJECTS CONTAINER -->
-            <!-- THIRD ELEMENT CONTAINER -->
-            <div id="courses" class="container-fluid">
-                <h4 id="scrollspyHeading3">Third heading</h4>
-            </div> <!-- END THIRD ELEMENT CONTAINER -->
-            <!-- FOURTH ELEMENT CONTAINER -->
-            <div id="contact" class="container-fluid">
-                <h4 id="scrollspyHeading4">Fourth heading</h4>
-            </div> <!-- END FOURTH ELEMENT CONTAINER -->
-            <!-- FIFTH ELEMENT CONTAINER -->
-            <div id="others" class="container-fluid">
-                <h4 id="scrollspyHeading5">Fifth heading</h4>
-            </div> <!-- END FIFTH ELEMENT CONTAINER -->
-        </div> <!-- END CONTENT CONTAINER -->
-    </div> <!-- END MAIN CONTAINER -->
+    <!-- RESUME CONTAINER -->
+    <div id="resume" class="container-fluid">
+        <!-- RESUME ROW 1 of 1 -->
+        <div class="row gralRow" id="resumeRow">
+            <!-- RESUME HEADER -->
+            <div class="col-md-6 col-sm-12 pt-3 align-self-center headerCol d-flex align-items-center justify-content-center"
+                id="resumeCol1of2">
+                <h4 id="scrollspyHeading1">Resume</h4>
+            </div> <!-- END OF RESUME HEADER -->
+            <!-- RESUME CONTENT -->
+            <div class="col-md-6 col-sm-12 pt-3 contCol" id="resumeCol2of2">
+                <h2>PROFESIONAL OVERVIEW</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod egestas sem at
+                    tempus.
+                    Nulla
+                    euismod
+                    vulputate velit, id tincidunt lorem volutpat a. Morbi accumsan venenatis varius. Cras eget
+                    ex vitae
+                    sapien
+                    egestas viverra. Vivamus felis risus, varius mattis interdum eget, blandit a erat. Nam
+                    vulputate
+                    congue
+                    mauris in rutrum. Vestibulum eu mi quis ligula ultricies lacinia. Donec vehicula ex libero.
+                    Curabitur
+                    venenatis quam in nunc feugiat lacinia. Maecenas vestibulum risus vitae nisi tempor, nec
+                    posuere
+                    lorem
+                    molestie. Integer vestibulum odio nec scelerisque viverra. Maecenas ornare interdum dolor,
+                    sit amet
+                    facilisis dui cursus in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere
+                    cubilia
+                    curae;
+                </p>
+            </div> <!-- END OF RESUME CONTENT -->
+        </div> <!-- END OF RESUME ROW -->
+    </div> <!-- END RESUME CONTAINER -->
+
+    <div id="projects" class="container-fluid">
+        <!-- PROJECTS ROW -->
+        <div class="row gralRow" id="projectsRow">
+            <!-- PROJECTS HEADER -->
+            <div class="col-md-6 col-sm-12 pt-3 align-self-center headerCol d-flex align-items-center justify-content-center"
+                id="projectsCol1of2">
+                <h4 id="scrollspyHeading1">Projects</h4>
+            </div> <!-- END OF PROJECTS HEADER -->
+            <!-- PROJECTS CONTENT -->
+            <div class="col-md-6 col-sm-12 pt-3 contCol" id="projectsCol2of2">
+                <!-- Skills List-->
+                <h2>Skills</h2>
+                <ul class="list-group">
+                    <!-- First Element -->
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col fw-bold">LabVIEW</div>
+                            <div class="col">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Second Element -->
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col fw-bold">C++</div>
+                            <div class="col">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Third Element -->
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col fw-bold">SolidWorks</div>
+                            <div class="col">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Fourth Element -->
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col fw-bold">Python</div>
+                            <div class="col">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Fifth Element -->
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col fw-bold">C#</div>
+                            <div class="col">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Sixth Element -->
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col fw-bold">PLC</div>
+                            <div class="col">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                                <i class="fas fa-circle emptyCircle"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul> <!-- End of Skills List -->
+            </div> <!-- END OF PROJECTS CONTENT -->
+        </div> <!-- END OF PROJECTS ROW -->
+    </div> <!-- END PROJECTS CONTAINER -->
+
+    <div id="courses" class="container-fluid">
+        <!-- COURSES ROW -->
+        <div class="row gralRow" id="coursesRow">
+            <!-- COURSES HEADER -->
+            <div class="col-md-6 col-sm-12 pt-3 align-self-center headerCol d-flex align-items-center justify-content-center"
+                id="coursesCol1of2">
+                <h4 id="scrollspyHeading1">Courses</h4>
+            </div> <!-- END OF COURSES HEADER -->
+            <!-- COURSES CONTENT -->
+            <div class="col-md-6 col-sm-12 pt-3 contCol" id="coursesCol2of2">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <div class="accordionImage" id="headingFirstImage"></div>
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="col fw-bold">LabVIEW</div>
+                                <div class="col">
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle emptyCircle"></i>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Intermediate Advanced</strong> Integer vestibulum odio nec scelerisque viverra.
+                                Maecenas ornare interdum dolor,
+                                sit amet
+                                facilisis dui cursus in. Vestibulum ante ipsum primis in faucibus orci luctus et
+                                ultrices
+                                posuere.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <div class="accordionImage" id="headingSecondImage"></div>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="col fw-bold">C++, SolidWorks, Python, HTML, Bootstrap</div>
+                                <div class="col">
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle emptyCircle"></i>
+                                    <i class="fas fa-circle emptyCircle"></i>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Intermediate</strong> Integer vestibulum odio nec scelerisque viverra. Maecenas
+                                ornare interdum dolor,
+                                sit amet
+                                facilisis dui cursus in. Vestibulum ante ipsum primis in faucibus orci luctus et
+                                ultrices
+                                posuere.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <div class="accordionImage" id="headingThirdImage"></div>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="col fw-bold">C#, PLC</div>
+                                <div class="col">
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle emptyCircle"></i>
+                                    <i class="fas fa-circle emptyCircle"></i>
+                                    <i class="fas fa-circle emptyCircle"></i>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Basic</strong> Integer vestibulum odio nec scelerisque viverra. Maecenas
+                                ornare interdum dolor,
+                                sit amet
+                                facilisis dui cursus in. Vestibulum ante ipsum primis in faucibus orci luctus et
+                                ultrices
+                                posuere.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- END OF COURSES CONTENT -->
+        </div> <!-- END OF COURSES ROW -->
+    </div> <!-- END COURSES CONTAINER -->
+
+    <!-- FOURTH ELEMENT CONTAINER -->
+    <div id="contact" class="container-fluid">
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+    </div> <!-- END FOURTH ELEMENT CONTAINER -->
+    <!-- FIFTH ELEMENT CONTAINER -->
+    <div id="others" class="container-fluid">
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+    </div> <!-- END FIFTH ELEMENT CONTAINER -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

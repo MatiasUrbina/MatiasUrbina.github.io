@@ -3,51 +3,55 @@
 
 /* Body */
 body {
-    margin: 0;
+    background-color: #212529;
+}
+
+/* Header */
+#header {
+    background-color: white;
 }
 
 /* TEXT */
-div>h1,div>h4,div>p {
+div>h1, div>h2, div>h4, div>p {
     color: rgb(26, 25, 25);
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-div>h4 {    
+div>h4 {
     text-align: center;
-    padding-top: 17.5vh;
     font-size: 50px;
 }
 
-div>h1 {    
+div>h2 {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 /* CONTENT CONTAINERS */
 /* Content */
-#content {
-    background-color: #212529;
-}
 
 /*All Containers*/
 #resume, #projects, #courses, #contact, #others {
-    height: 100vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.row {
+.gralRow {
     height: 100vh;
 }
 
-.headerCol{
+.headerCol {
     background-color: #FFD02B;
-    margin-top: 25vh;
     height: 50vh;
+}
+
+.headerCol1 {
+    background-color: blanchedalmond;
 }
 
 .contCol {
@@ -79,6 +83,27 @@ div>h1 {
     background-color: #523F86;
 }
 
+/* Accordion */
+.accordionImage {
+    height: 15vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#headingFirstImage {
+    background-image: url(../img/labview-test.jpg);
+}
+
+#headingSecondImage {
+    background-image: url(../img/html-code.jpg);
+    background-position: center;
+}
+
+#headingThirdImage {
+    background-image: url(../img/plc-wiring.jpg);
+    background-position: center;
+}
+
 /* Buttons */
 #btn-back-to-top {
     position: fixed;
@@ -87,15 +112,22 @@ div>h1 {
     display: none;
 }
 
+/* Icons */
+.emptyCircle {
+    color: #D9D9D9;
+}
+
+
 /* MEDIA QUERY */
+/* Responsive Medium or Smaller Media */
 @media(max-width: 766px) {
     .headerCol {
-        margin-top: 25vh;
-        height: 13.5vh;
+        margin-top: 50vh;
+        height: 50vh;
     }
 
     .contCol {
-        height: 61.5vh;
+        height: 100vh;
     }
 
     div>h4 {
@@ -104,12 +136,52 @@ div>h1 {
         margin-top: 0px;
         margin-bottom: 0px;
     }
-}
 
-@media(max-width: 400px){
-    p{
-        height: 55vh;
-        overflow-y: scroll;
-        scrollbar-width: 0px;
+    .gralRow {
+        height: 200vh;
     }
-}
+
+
+    .accordionImage {
+        height: 20vh;
+    }
+
+    #headingSecondImage, #headingThirdImage {
+        display: none;
+    }
+
+    /* 
+@media(max-width: 300px) {
+    .headerCol {
+        margin-top: 50px;
+        height: 50px;
+        width: 300px;
+    }
+
+    .contCol {
+        height: 100px;
+        width: 300px;
+    }
+
+    div>h4 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 300px;
+    }
+} */
+
+    @media(max-width: 400px) {
+        div>h4 {
+            overflow-wrap: break-word;
+        }
+
+        .contCol {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 100vh;
+            overflow-y: scroll;
+            scrollbar-width: 0px;
+        }
+    }
