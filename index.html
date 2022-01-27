@@ -22,13 +22,11 @@
     <!-- Back to top button -->
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
-    </button>
+    </button> <!-- End of Back to top button -->
 
     <!-- TOP HEADER -->
     <div class="top-header py-4 mx-0" id="header">
-        <div class="container-fluid">
-            <h1 style="text-align: center;">Portfolio</h1>
-        </div>
+        <h1 class="text-center">Portfolio</h1>
     </div> <!-- END TOP HEADER -->
 
     <!-- Navbar -->
@@ -72,35 +70,71 @@
         <!-- RESUME ROW 1 of 1 -->
         <div class="row gralRow" id="resumeRow">
             <!-- RESUME HEADER -->
-            <div class="col-md-6 col-12 pt-3 align-self-center headerCol d-flex align-items-center justify-content-center" id="resumeHeaderCol">
+            <div class="col-md-6 col-12 pt-3 align-self-center headerCol d-flex align-items-center justify-content-center"
+                id="resumeHeaderCol">
                 <h4 id="scrollspyHeading1">Resume</h4>
             </div> <!-- END OF RESUME HEADER -->
             <!-- RESUME CONTENT -->
-            <div class="col-md-6 col-12 pt-3 bodyCol" id="resumeBodyCol">
-                <h2>PROFESIONAL OVERVIEW</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod egestas sem at
-                    tempus.
-                    Nulla
-                    euismod
-                    vulputate velit, id tincidunt lorem volutpat a. Morbi accumsan venenatis varius. Cras eget
-                    ex vitae
-                    sapien
-                    egestas viverra. Vivamus felis risus, varius mattis interdum eget, blandit a erat. Nam
-                    vulputate
-                    congue
-                    mauris in rutrum. Vestibulum eu mi quis ligula ultricies lacinia. Donec vehicula ex libero.
-                    Curabitur
-                    venenatis quam in nunc feugiat lacinia. Maecenas vestibulum risus vitae nisi tempor, nec
-                    posuere
-                    lorem
-                    molestie. Integer vestibulum odio nec scelerisque viverra. Maecenas ornare interdum dolor,
-                    sit amet
-                    facilisis dui cursus in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                    posuere
-                    cubilia
-                    curae;
-                </p>
+            <div class="col-md-6 col-12 py-3 bodyCol" id="resumeBodyCol">
+                <h2>Overview</h2>
+                <p id="hour">, my name is Matías Urbina. I'm a Mechatronics engineer focused on programming, electronic
+                    and automation areas.</p>
+                <!-- Education and Languages With Cards Row -->
+                <h2>Education and Languages <i class="fas fa-book"></i></h2> 
+                <div class="row row-cols-1 row-cols-sm-2" id="cardsRow">
+                    <!-- Education card -->
+                    <div class="col mt-2 mt-sm-0">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Education</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    Facultad de Ingeniería Mecánica y Eléctrica, UANL<br>
+                                    Jan 2016 - Dec 2020
+                                </h6>
+                                <p class="card-text">BS Mechatronics Engineer</p>
+                            </div>
+                        </div>
+                    </div> <!-- End of Education card -->
+                    <!-- Languages card -->
+                    <div class="col mt-2 mt-sm-0">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Languages</h5>
+                                <p class="card-text"><strong>English:</strong> Intermedium Advanced (70%)</p>
+                            </div>
+                        </div>
+                    </div> <!-- End of Languages card -->
+                </div> <!-- End Education and Languages With Cards Row -->
+
+                <!-- Courses and Certifications With Cards Row -->
+                <h2 class="mt-3">Courses and Certifications</h2>
+                <div class="row row-cols-1 row-cols-sm-2" id="cardsRow">
+                    <!-- LabVIEW card -->
+                    <div class="col mt-2 mt-sm-0">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">NI LabVIEW Workshop</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">FIME, UANL</h6>
+                                <p class="card-text">
+                                    <strong>Course Date:</strong> Sept - Dec 2018 <br>
+                                    <strong>Certification:</strong> Certified LabVIEW Associate Developer (CLAD)
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- End of LabVIEW card -->
+                    <!-- Web Programming card -->
+                    <div class="col mt-2 mt-sm-0">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Programming Course</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">DECyDP, UANL</h6>
+                                <p class="card-text">
+                                    <strong>Course Date:</strong> Jul - Sept 2019
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- End of Web Programming card -->
+                </div> <!-- End Courses and Certifications With Cards Row -->
             </div> <!-- END OF RESUME CONTENT -->
         </div> <!-- END OF RESUME ROW -->
     </div> <!-- END RESUME CONTAINER -->
@@ -122,14 +156,17 @@
                         <!-- Intermediate advanced Header -->
                         <div class="accordionImage rounded-top" id="headingFirstImage"></div>
                         <h2 class="accordion-header" id="accordion-intermediate-advanced">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <div class="col fw-bold">LabVIEW</div>
-                                <div class="col">
-                                    <i class="fas fa-circle"></i>
-                                    <i class="fas fa-circle"></i>
-                                    <i class="fas fa-circle"></i>
-                                    <i class="fas fa-circle"></i>
+                            <button class="accordion-button d-flex flex-row bd-highlight" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <div class="bd-highlight w-75 flex-wrap fw-bold">LabVIEW, Electrical measuring
+                                    instruments, MS Office
+                                </div>
+                                <div class="bd-highlight ">
+                                    <i class="fas fa-circle fillCircle"></i>
+                                    <i class="fas fa-circle fillCircle"></i>
+                                    <i class="fas fa-circle fillCircle"></i>
+                                    <i class="fas fa-circle fillCircle"></i>
                                     <i class="fas fa-circle emptyCircle"></i>
                                 </div>
                             </button>
@@ -152,13 +189,15 @@
                         <!-- Intermediate Header -->
                         <h2 class="accordion-header border-top border-4" id="accordion-intermediate">
                             <div class="accordionImage d-none d-lg-block" id="headingSecondImage"></div>
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <div class="col fw-bold">C++, SolidWorks, Python, HTML, Bootstrap</div>
-                                <div class="col">
-                                    <i class="fas fa-circle"></i>
-                                    <i class="fas fa-circle"></i>
-                                    <i class="fas fa-circle"></i>
+                            <button class="accordion-button collapsed d-flex flex-row bd-highlight" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <div class="bd-highlight w-75 flex-wrap fw-bold">C++, SolidWorks, Python, Bootstrap
+                                    (HTML, CSS & JS)</div>
+                                <div class="bd-highlight">
+                                    <i class="fas fa-circle fillCircle"></i>
+                                    <i class="fas fa-circle fillCircle"></i>
+                                    <i class="fas fa-circle fillCircle"></i>
                                     <i class="fas fa-circle emptyCircle"></i>
                                     <i class="fas fa-circle emptyCircle"></i>
                                 </div>
@@ -182,12 +221,13 @@
                         <!-- Basic Header -->
                         <h2 class="accordion-header border-top border-4" id="accordion-basic">
                             <div class="accordionImage d-none d-lg-block" id="headingThirdImage"></div>
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <div class="col fw-bold">C#, PLC</div>
-                                <div class="col">
-                                    <i class="fas fa-circle"></i>
-                                    <i class="fas fa-circle"></i>
+                            <button class="accordion-button collapsed d-flex flex-row bd-highlight" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <div class="bd-highlight w-75 flex-wrap fw-bold">C#, PLC</div>
+                                <div class="bd-highlight ">
+                                    <i class="fas fa-circle fillCircle"></i>
+                                    <i class="fas fa-circle fillCircle"></i>
                                     <i class="fas fa-circle emptyCircle"></i>
                                     <i class="fas fa-circle emptyCircle"></i>
                                     <i class="fas fa-circle emptyCircle"></i>
@@ -219,14 +259,16 @@
             <h4 id="scrollspyHeading1">Projects</h4>
         </div> <!-- End Projects Header Row -->
         <!-- Projects Cards Row -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 align-items-center justify-content-center" id="cardsRow">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 align-items-center justify-content-center"
+            id="cardsRow">
             <!-- Card 1 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="/img/plc-wiring.jpg" class="card-img-top" alt="...">
+                    <img src="img/resume.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        <p class="card-text"><strong> This is a bold text ._.XD </strong>This is a longer card with
+                            supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
@@ -234,12 +276,14 @@
             <!-- Card 2 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="/img/plc-wiring.jpg" class="card-img-top" alt="...">
+                    <img src="img/resume.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.This is a longer card with
+                            supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.This is a longer card with
+                            supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
@@ -247,44 +291,11 @@
             <!-- Card 3 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="/img/plc-wiring.jpg" class="card-img-top" alt="...">
+                    <img src="img/resume.jpg" class="card-img-top cardImgStyle" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title cardTitleStyle">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                             additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/img/plc-wiring.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/img/plc-wiring.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 6 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/img/plc-wiring.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
             </div>
@@ -298,7 +309,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <!-- Custom JS -->
-    <script type="text/javascript" src="js\script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 

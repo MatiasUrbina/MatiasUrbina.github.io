@@ -4,17 +4,13 @@
 /* Body */
 body {
     background-color: #212529;
+    color: rgb(26, 25, 25);
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 /* Header */
 #header {
     background-color: white;
-}
-
-/* TEXT */
-div>h1, div>h2, div>h4, div>p {
-    color: rgb(26, 25, 25);
-    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 div>h4 {
@@ -31,14 +27,14 @@ div>h2 {
 }
 
 /* CONTENT CONTAINERS */
-/* Content */
-
 /*All Containers*/
 #resume, #skills, #projects, #contact, #others {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: normal;
 }
 
 .gralRow {
@@ -64,9 +60,30 @@ div>h2 {
     background-color: #212529;
 }
 
+    /* Accordion */
+.accordionImage {
+    height: 15vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#headingFirstImage {
+    background-image: url(../img/labview-test-resize.jpg);
+}
+
+#headingSecondImage {
+    background-image: url(../img/html-code-resized.jpg);
+    background-position: center;
+}
+
+#headingThirdImage {
+    background-image: url(../img/plc-wiring.jpg);
+    background-position: center;
+}
+
 /* Projects Container */
 #projects {
-    background-image: url(../img/projects.jpg);
+    background-image: url(../img/projects-container-resize.jpg);
     height: 100%;
 }
 
@@ -85,27 +102,6 @@ div>h2 {
     background-color: #523F86;
 }
 
-/* Accordion */
-.accordionImage {
-    height: 15vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#headingFirstImage {
-    background-image: url(../img/labview-test.jpg);
-}
-
-#headingSecondImage {
-    background-image: url(../img/html-code.jpg);
-    background-position: center;
-}
-
-#headingThirdImage {
-    background-image: url(../img/plc-wiring.jpg);
-    background-position: center;
-}
-
 /* Buttons */
 #btn-back-to-top {
     position: fixed;
@@ -118,6 +114,10 @@ div>h2 {
 /* Icons */
 .emptyCircle {
     color: #D9D9D9;
+}
+
+.fillCircle {
+    color: black;
 }
 
 
