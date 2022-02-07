@@ -1,16 +1,20 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&display=swap');
 
-/* Body */
-body {
-    background-color: #212529;
-    color: rgb(26, 25, 25);
-    font-family: 'Be Vietnam Pro', sans-serif;
+/* Generals */
+.bg-grey {
+    background-color: #313434 !important;
 }
 
-/* Header */
-#header {
-    background-color: white;
+.bg-yellow {
+    background-color: #FFD02B !important;
+}
+
+/* Body */
+body {
+    background-color: #313434;
+    color: rgb(26, 25, 25);
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 div>h4 {
@@ -25,6 +29,24 @@ div>h2 {
     text-transform: uppercase;
     width: 100%;
 }
+
+.normalLink {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar-brand {
+    color: #FFD02B !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#navbarBrandRow {
+    width: 250px !important;
+    height: 50px !important;
+}
+
 
 /* CONTENT CONTAINERS */
 /*All Containers*/
@@ -57,7 +79,7 @@ div>h2 {
 
 /* Skills Container */
 #skills {
-    background-color: #212529;
+    background-color: #313434;
 }
 
     /* Accordion */
@@ -79,6 +101,14 @@ div>h2 {
 #headingThirdImage {
     background-image: url(../img/plc-wiring.jpg);
     background-position: center;
+}
+
+.progress {
+    height: 20px;
+}
+.progress-bar {
+    background-color: #FFD02B;
+    color: #212529;
 }
 
 /* Projects Container */

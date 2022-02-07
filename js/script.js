@@ -1,4 +1,4 @@
-// GO TO TOP FUNCTIONS
+// --- GO TO TOP FUNCTIONS --- //
 //Get the button
 let goToTopButton = document.getElementById("btn-back-to-top");
 
@@ -26,12 +26,12 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-// GRETTINGS FUNCTION
+// --- GRETTINGS FUNCTION --- //
 // Using Function
-printGreetings("hour",false)
+printGreetings("hour", false)
 
 // Function Declaration
-function printGreetings(id,replaceText) {
+function printGreetings(id, replaceText) {
   // The input is an ID from a label in HTML File
   // Two possible text positions
   //  - false: Puts the greetings in the begining of the text
@@ -71,6 +71,35 @@ function printGreetings(id,replaceText) {
     actualText.textContent = hourString;
   } else {
     // Add text at the begining
-    actualText.textContent = hourString+actualText.textContent;    
+    actualText.textContent = hourString + actualText.textContent;
   }
+}
+
+// --- COPY TO CLIPBOARD --- //
+function copyToClipboard() {
+  /* Get the text field */
+  var copyText = document.getElementById("elementToClipboard");
+
+  /* Get the href */
+  var text = copyText.getAttribute("href").toString();
+
+   /* Write the text into the clipboard */
+  navigator.clipboard.writeText(text);
+}
+
+// --- TOOLTIP --- //
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+// --- TOAST TRIGGER --- //
+var toastTrigger = document.getElementById('mailCopy-btn')
+var toastLiveMailCopy = document.getElementById('mailCopy')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveMailCopy)
+
+    toast.show()
+  })
 }
