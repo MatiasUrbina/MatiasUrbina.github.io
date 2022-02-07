@@ -1,13 +1,185 @@
-body{
-    position: relative;
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&display=swap');
+
+/* Generals */
+.bg-grey {
+    background-color: #313434 !important;
 }
 
-/*
-#scrollspyHeading1{
-    padding-top: 55px;
+.bg-yellow {
+    background-color: #FFD02B !important;
 }
 
-#scrollspyHeading2,#scrollspyHeading3,#scrollspyHeading4,#scrollspyHeading5{
+/* Body */
+body {
+    background-color: #313434;
+    color: rgb(26, 25, 25);
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+div>h4 {
+    text-align: center;
+    font-size: 50px;
+}
+
+div>h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.normalLink {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar-brand {
+    color: #FFD02B !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#navbarBrandRow {
+    width: 250px !important;
+    height: 50px !important;
+}
+
+
+/* CONTENT CONTAINERS */
+/*All Containers*/
+#resume, #skills, #projects, #contact, #others {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: normal;
+}
+
+.gralRow {
+    height: 100vh;
+}
+
+.headerCol {
+    background-color: #FFD02B;
+    height: 50vh;
+}
+
+.bodyCol {
+    background-color: white;
+}
+
+/* Resume Container */
+#resume {
+    background-image: url(../img/resume.jpg);
+}
+
+/* Skills Container */
+#skills {
+    background-color: #313434;
+}
+
+    /* Accordion */
+.accordionImage {
+    height: 15vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#headingFirstImage {
+    background-image: url(../img/labview-test-resize.jpg);
+}
+
+#headingSecondImage {
+    background-image: url(../img/html-code-resized.jpg);
+    background-position: center;
+}
+
+#headingThirdImage {
+    background-image: url(../img/plc-wiring.jpg);
+    background-position: center;
+}
+
+.progress {
+    height: 20px;
+}
+.progress-bar {
+    background-color: #FFD02B;
+    color: #212529;
+}
+
+/* Projects Container */
+#projects {
+    background-image: url(../img/projects-container-resize.jpg);
+    height: 100%;
+}
+
+.projectsHeader {
+    height: 75px;
+    background-color: #FFD02B;
+}
+
+/* Contact Container */
+#contact {
+    background-color: #61B1D9;
+}
+
+/* Others Container */
+#others {
+    background-color: #523F86;
+}
+
+/* Buttons */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1080;
+}
+
+/* Icons */
+.emptyCircle {
+    color: #D9D9D9;
+}
+
+.fillCircle {
     color: black;
-    padding-top: 55px;
-} */
+}
+
+
+/* MEDIA QUERY */
+/* Responsive Medium or Larger Media */
+@media(max-width: 766px) {
+    .headerCol {
+        margin-top: 50vh;
+        height: 50vh;
+    }
+
+    .bodyCol {
+        height: 100%;
+    }
+
+    div>h4 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .gralRow {
+        height: 100%;
+    }
+
+    .accordionImage {
+        height: 20vh;
+    }
+
+    #skillsHeaderCol {
+        margin-top: 0vh;
+        height: 100%;
+    }
+}
