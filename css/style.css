@@ -10,6 +10,10 @@
     background-color: #FFD02B !important;
 }
 
+.img-container-200 {
+    max-width: 250px;
+}
+
 /* Body */
 body {
     background-color: #313434;
@@ -42,7 +46,7 @@ div>h2 {
     font-weight: bold;
 }
 
-#navbarBrandRow {
+.navbarBrandRow {
     width: 250px !important;
     height: 50px !important;
 }
@@ -50,7 +54,7 @@ div>h2 {
 
 /* CONTENT CONTAINERS */
 /*All Containers*/
-#resume, #skills, #projects, #contact, #others {
+#resume, #skills, #projects, #contact {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,30 +86,11 @@ div>h2 {
     background-color: #313434;
 }
 
-    /* Accordion */
-.accordionImage {
-    height: 15vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#headingFirstImage {
-    background-image: url(../img/labview-test-resize.jpg);
-}
-
-#headingSecondImage {
-    background-image: url(../img/html-code-resized.jpg);
-    background-position: center;
-}
-
-#headingThirdImage {
-    background-image: url(../img/plc-wiring.jpg);
-    background-position: center;
-}
-
+/* Accordion */
 .progress {
     height: 20px;
 }
+
 .progress-bar {
     background-color: #FFD02B;
     color: #212529;
@@ -125,11 +110,6 @@ div>h2 {
 /* Contact Container */
 #contact {
     background-color: #61B1D9;
-}
-
-/* Others Container */
-#others {
-    background-color: #523F86;
 }
 
 /* Buttons */

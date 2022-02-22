@@ -32,11 +32,11 @@ printGreetings("hour", false)
 
 // Function Declaration
 function printGreetings(id, replaceText) {
-  // The input is an ID from a label in HTML File
-  // Two possible text positions
-  //  - false: Puts the greetings in the begining of the text
-  //  - true: Replaces text with the greetings
-  // The output is the greetings in the ID labe
+  /* The input is an ID from a label in HTML File
+    Two possible text positions
+      - false: Puts the greetings in the begining of the text
+      - true: Replaces text with the greetings
+  The output is the greetings in the ID labe */
 
   // Initialize Variables
   let date = new Date();
@@ -77,15 +77,20 @@ function printGreetings(id, replaceText) {
 
 // --- COPY TO CLIPBOARD --- //
 function copyToClipboard() {
-  /* Get the text field */
+  // Get the text field
   var copyText = document.getElementById("elementToClipboard");
 
-  /* Get the href */
+  // Get the href
   var text = copyText.getAttribute("href").toString();
 
-   /* Write the text into the clipboard */
+  // Write the text into the clipboard
   navigator.clipboard.writeText(text);
 }
+
+// --- VALIDATION --- //
+
+
+/* BOOTSTRAP FUNCTIONS */
 
 // --- TOOLTIP --- //
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -94,12 +99,14 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 // --- TOAST TRIGGER --- //
-var toastTrigger = document.getElementById('mailCopy-btn')
-var toastLiveMailCopy = document.getElementById('mailCopy')
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveMailCopy)
-
-    toast.show()
-  })
+function toastTriggerer(buttonId,toastMessageId) {
+  var toastTrigger = document.getElementById(buttonId)
+  var toastLiveMailCopy = document.getElementById(toastMessageId)
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveMailCopy)
+  
+      toast.show()
+    })
+  }
 }
